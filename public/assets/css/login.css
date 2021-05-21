@@ -1,0 +1,83 @@
+/* form {
+    border: 20px solid #C0C0C0;
+
+  } */
+
+  h1
+  {
+      margin-left: 475px;
+      margin-top:80px;
+  }
+  .pass, .reset
+  {
+    margin-left: 360px;
+  }
+  .username
+  {
+    margin-left: 360px;
+    /* color: #D8000C; */
+  }
+  input[type=email]  {
+     
+    width: 155px;
+    /* padding: 12px 20px; */
+    /* margin: 8px 0; */
+    /* display: inline-block; */
+    /* border: 1px solid #ccc;
+    box-sizing: border-box; */
+    background-color:rgb(241, 239, 239);
+    border:none;
+  }
+  input[type=password]
+  {
+    
+    width: 155px;
+    /* padding: 12px 20px; */
+    /* margin: 8px 0; */
+    /* display: inline-block; */
+    /* border: 1px solid #ccc;
+    box-sizing: border-box; */
+    background-color:rgb(241, 239, 239);
+    border:none;
+  }
+  
+input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+  input[type=submit]
+    {
+      background-color: #000;
+      color: #fff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-left: 360px;
+      }
+      input[type=submit]:hover
+      {
+        opacity: 0.8;
+      }
+      .imgcontainer {
+        /* text-align: center; */
+        margin: 20px 0 18px 40px;
+      }
+      
+      /* Avatar image */
+      img.avatar {
+        margin-left: 380px;
+        width: 20%;
+        border-radius: 50%;
+      }
+      .container {
+        padding: 16px;
+      }
+
+  
+  

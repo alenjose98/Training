@@ -1,0 +1,50 @@
+h1
+{
+    margin-top: 100px;
+    margin-left: 380px;
+    height: 70px;
+}
+.resetPasswordOne, .resetPasswordSecond
+{
+    margin-bottom: 20px;
+    margin-left: 375px;
+}
+.resetEmailLabelOne, .resetEmailLabelSecond
+{
+    font-weight: bold;
+}
+.resetEmailWidgetOne, .resetEmailWidgetSecond
+{
+    width: 200px;
+    border:none;
+    background-color:rgb(241, 239, 239);
+}
+.resetEmailWidgetOne:focus 
+{
+    background-color: #ddd;
+    outline: none;
+}
+ .resetEmailWidgetSecond:focus 
+{
+    background-color: #ddd;
+    outline: none;
+}
+.sub
+{
+    background-color: #000;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    margin-left: 420px;
+}
+.sub:hover
+{
+    opacity: 0.8;
+}
+.container 
+{
+    padding: 16px;
+}

@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <title>{% block title %}Sign Up!{% endblock %}</title>
+  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/register.css') }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="w3-top">
+        <div class="w3-row w3-large w3-light-grey">
+          <div class="w3-col s2">
+            <a href="{{ path('index') }}" class="w3-button w3-block">Home</a>
+          </div>
+          <div class="w3-col s2">
+            <a href="{{ path('index') }}#plans" class="w3-button w3-block">Plans</a>
+          </div>
+          <div class="w3-col s2">
+            <a href="{{ path('index') }}#about" class="w3-button w3-block">About</a>
+          </div>
+          <div class="w3-col s2">
+            <a href="{{ path('index') }}#contact" class="w3-button w3-block">Contact</a>
+          </div>
+          <div class="w3-col s2">
+              <a href="#" class="w3-button w3-block">Register</a>
+            </div>
+            <div class="w3-col s2">
+              <a href="{{ path('Login') }}" class="w3-button w3-block">Sign In</a>
+            </div>
+        </div>
+      </div>
+
+    <div class="container d-flex align-items-center flex-column">
+        <div class="row">
+            <div class="col-6"><h1><b>Register</b></h1></div>
+        </div>
+        {{ form_start(register_form) }}
+        <div class="row">
+            <div class="col-6 message">{{ message }}</div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col-4">{{ form_label(register_form.name, null, {'label_attr': {'class': 'regNameLabel'}}) }}</div>
+            <div class="col-4">{{ form_widget(register_form.name, {'attr': {'class': 'regNameWidget','placeholder': "Enter Name"}}) }}</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">{{ form_label(register_form.email, null, {'label_attr': {'class': 'regEmailLabel'}}) }}</div>
+            <div class="col-4">{{ form_widget(register_form.email, {'attr': {'class': 'regEmailWidget','placeholder': "Enter Username"}}) }}</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">{{ form_label(register_form.password, null, {'label_attr': {'class': 'regpasswordLabel'}}) }}</div>
+            <div class="col-4">{{ form_widget(register_form.password, {'attr': {'class': 'regpasswordWidget','placeholder': "Enter Password"}}) }}</div>
+        </div>
+        <div class="row">
+            {{ form_row(register_form.Submit, { 'label': 'Sign Up', 'attr':{'class':'w3-button w3-block w3-black sub col-8'} }) }}
+        </div>
+        {{ form_end(register_form) }}
+    </div>
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+        <h4>Footer</h4>
+        <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </footer>
+{% endblock %}
+  

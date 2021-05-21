@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Reset your password{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/reset.css') }}">
+<div class="container">
+    <div class="row">
+        <div class="col-10"><h1><b>Reset your password</b></h1></div>
+    </div>
+    {{ form_start(resetForm) }}
+    <div class="row resetPasswordOne">
+        <div class="col-3">{{ form_label(resetForm.plainPassword.first, null, {'label_attr': {'class': 'resetEmailLabelOne'}}) }}</div>
+        <div class="col-5">{{ form_widget(resetForm.plainPassword.first, {'attr': {'class': 'resetEmailWidgetOne','placeholder': "New Password"}}) }}</div>
+    </div>
+    <div class="row resetPasswordSecond">
+        <div class="col-3">{{ form_label(resetForm.plainPassword.second, null, {'label_attr': {'class': 'resetEmailLabelSecond'}}) }}</div>
+        <div class="col-5">{{ form_widget(resetForm.plainPassword.second, {'attr': {'class': 'resetEmailWidgetSecond','placeholder': "Repeat Password"}}) }}</div>
+    </div>
+    <div class="row"> 
+        <div class="col-10"><button class="w3-button w3-block w3-black sub">Reset password</button></div>
+    </div>
+    {{ form_end(resetForm) }}
+</div>
+{% endblock %}

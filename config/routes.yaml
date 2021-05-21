@@ -1,0 +1,18 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+Login:
+   path: /login
+   controller: App\Controller\LoginController::login
+
+Registration:
+   path: /register
+   controller: App\Controller\LoginController::register
+
+Example:
+   path: /home
+   controller: App\Controller\LoginController::loginAction
+Admin:
+   path: /admin
+   controller: App\Controller\LoginController::admin
